@@ -1,0 +1,67 @@
+
+
+.owl-carousel .owl-nav {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  position: absolute;
+  top: 98%;
+  transform: translateY(-20%);
+  right: 0;
+  left: 0;
+  height: 20px;
+  margin: auto;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+  /* padding: 6px 15px !important; */
+  transform: rotateZ(-180deg);
+  outline: none;
+  font-size: 160px;
+  /* margin-top: 22%; */
+}
+.owl-carousel .owl-nav button.owl-prev *,
+.owl-carousel .owl-nav button.owl-next * {
+  vertical-align: text-bottom;
+}
+
+.slider {
+  overflow: hidden;
+  position: relative;
+  height: 85vh;
+}
+.slider .text-slider-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.slider .text-slider-content .text-carousel .slide-elem {
+  font-family: Impact;
+  font-size: 140px;
+  z-index: -1;
+}
+.slider .text-slider-content .text-carousel span {
+  transition: all ease-out 0.5s;
+  color: #ffffff47;
+}
+.slider .text-slider-content .text-carousel .center span {
+  color: white;
+  text-decoration: underline;
+}
+.slider .character-carousel {
+  position: relative;
+}
+.slider .character-carousel .slide-elem {
+  text-align: center;
+}
+.slider .character-carousel .slide-elem img {
+  width: auto !important;
+  max-width: 100%;
+  max-height: 400px;
+  margin: 0 auto;
+  pointer-events: none;
+}
+
+.owl-carousel .owl-stage-outer a{
+text-decoration: none;
+}

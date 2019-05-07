@@ -1,0 +1,170 @@
+@import 'https://fonts.googleapis.com/css?family=Poiret+One';
+* {
+  box-sizing: border-box;
+}
+
+#form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poiret One", cursive;
+  color: #fff;
+  font-size: 100%;
+  height: 100vh;
+  margin-top: -50%;
+}
+
+/* Custom Code Here */
+.container .group-wrapper {
+  position: relative;
+  height: 65px;
+  transition: all 400ms cubic-bezier(0.13, 0.85, 0.17, 0.99);
+}
+.container .group-wrapper.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.container .group-wrapper.results-shown {
+  height: auto;
+  width: 550px;
+}
+.container .group-wrapper.results-shown .progress {
+  bottom: -2px;
+  height: 2px;
+  display: none;
+  background: rgba(255, 255, 255, 0.3);
+}
+.container .group-wrapper .next-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 400ms cubic-bezier(0.13, 0.85, 0.17, 0.99);
+}
+.container .group-wrapper .next-arrow.active {
+  opacity: 1;
+  pointer-events: all;
+  right: -20px;
+}
+.container .group-wrapper .progress {
+  position: absolute;
+  height: 5px;
+  left: 160px;
+  right: 0;
+  width: 0%;
+  bottom: 0px;
+  background: #fff;
+  transition: all 800ms cubic-bezier(0.13, 0.85, 0.17, 0.99);
+}
+.container .group-wrap {
+  position: absolute;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+.container .group-wrap.active-inp {
+  pointer-events: all;
+  opacity: 1;
+}
+.container .group-wrap.active-inp .group-input label {
+  left: 140px;
+  opacity: 1;
+}
+.container .group-input {
+  position: relative;
+}
+.container .group-input input {
+  padding: 24px 15px 5px 15px;
+  border: none;
+  border-bottom: 5px solid rgba(255, 255, 255, 0.5);
+  background: rgba(0, 0, 0, 0.58);
+  width: 80%;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 26px;
+  font-family: "Poiret One", cursive;
+}
+.container .group-input input:focus {
+  outline: none;
+}
+.container .group-input label {
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+  font-size: 26px;
+  transition: all 800ms cubic-bezier(0.13, 0.85, 0.17, 0.99);
+  top: -40px;
+}
+.container .results {
+  font-size: 26px;
+  opacity: 0;
+  background: #020202a8;
+  padding: 20px;
+  border-radius: 20px;
+  text-align: left;
+  border: 2px solid #9a9a9a;
+  width: 1000px;
+  margin-left: 62%;
+  transition: all 800ms cubic-bezier(0.13, 0.85, 0.17, 0.99);
+}
+.container .results.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.container .results.active {
+  opacity: 1;
+}
+.container .results div {
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+  /* text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #28d8ff, 0 0 0.5em #28d8ff, 0 0 0.1em #28d8ff, 0 10px 3px #000; */
+}
+.container .results div:last-child {
+  border-bottom: none;
+}
+.container .results span {
+  font-style: italic;
+  color: white;
+  font-weight: normal;
+}
+.container .submit-btn {
+  /* border: none; */
+  margin-right: -60%;
+  border: 2px solid rgb(146, 146, 146);
+  background: none;
+  font-size: 20px;
+  padding: 10px 35px;
+  position: absolute;
+  top: -60px;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* font-family: "Poiret One", cursive; */
+  cursor: pointer;
+  transition: all 1000ms cubic-bezier(0.13, 0.85, 0.17, 0.99);
+  transition-delay: 300ms;
+  opacity: 0;
+  right: 100%;
+  border-radius: 6px;
+}
+.container .submit-btn.active {
+  right: 0;
+  opacity: 1;
+}
+.container .submit-btn:hover {
+  background: white;
+  color: black;
+  border: 2px solid white;
+}
+.container .submit-btn:focus {
+  outline: none;
+}
+
+/* end of custom code */
