@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Seu Próprio Site</title>
+  <title id="title">Seu Próprio Site</title>
   <link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
 
       <link rel="stylesheet" href="css/pac.css">
@@ -24,6 +24,7 @@
       <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
       <link rel="stylesheet" href="css/sobre.css">
       <link rel="stylesheet" href="css/modal.css">
+      <link rel="stylesheet" href="css/cases.css">
 </head>
 
 <style>
@@ -159,11 +160,11 @@
   <div class="panel-wrap animate--none">
     <div class="panel" data-x-pos="0"  data-y-pos="0" onMouseOver="document.getElementById('some').style.opacity = 0" onMouseOut="document.getElementById('some').style.display = none">
       <span class="panel__nav panel__nav--up js-up">sobre</span>
-      <span class="panel__nav panel__nav--right-top js-up js-right">cases</span>
-      <span class="panel__nav panel__nav--left-top js-up js-left">cases</span>
-<!--  <span class="panel__nav panel__nav--left js-left">SITES</span>
-      <span class="panel__nav panel__nav--right js-right">sites</span>
-      <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
+      <!-- <span class="panel__nav panel__nav--right-top js-up js-right">cases</span>
+      <span class="panel__nav panel__nav--left-top js-up js-left">cases</span> -->
+      <span class="panel__nav panel__nav--left js-left">cases</span>
+      <span class="panel__nav panel__nav--right js-right">cases</span>
+      <!-- <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
       <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span> -->
       <span class="panel__nav panel__nav--down js-down">contato</span>
       <span class="panel__zoom js-zoom" style="z-index: 1000;">Ver TUDO</span>
@@ -191,18 +192,18 @@
       <div class="panel__animation-list" style="z-index: 200">
 <!--         <span class="js-animation" data-animation="animate--none">HOME</span> -->
         <span class="js-animation js-up" data-animation="animate--shrink" style="z-index: 1000;">SOBRE</span>
-        <span class="js-animation js-up js-right" data-animation="animate--tilt" style="z-index: 1000;">CASES</span>
+        <span class="js-animation js-left" data-animation="animate--tilt" style="z-index: 1000;">CASES</span>
         <span class="js-animation js-down" data-animation="animate--tilt2" style="z-index: 1000;">CONTATO</span>
       </div>
     </div>
     <div class="panel"  data-x-pos="0"  data-y-pos="1" onMouseOver="document.getElementById('some').style.opacity = 1" onMouseOut="document.getElementById('some').style.display = none">
       <div id="some" class="testepac"></div>
-      <span class="panel__nav panel__nav--left js-left">cases</span>
-      <span class="panel__nav panel__nav--right js-right">cases</span>
-<!--       <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
-      <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span> -->
+      <!-- <span class="panel__nav panel__nav--left js-left">cases</span>
+      <span class="panel__nav panel__nav--right js-right">cases</span> -->
+      <span class="panel__nav panel__nav--right-down js-down js-right">cases</span>
+      <span class="panel__nav panel__nav--left-down js-down js-left">cases</span>
       <span class="panel__nav panel__nav--down js-down">Home</span>
-      <h2>SOBRE</h2>
+      <h2 style="font-size: 60px;">COMO FUNCIONAMOS?</h2>
 
       <section class="slider">
         <div class="text-slider-content">
@@ -237,7 +238,7 @@
             <div class="slide-elem">
               <div class="slide-img">
                 <div style="margin-top: 20%;">
-                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 303.468" style="width:20%;"><defs><style>.bubble-tech-a,.bubble-tech-b{fill:white;}.bubble-tech-a{opacity:0.3;}.bubble-tech-c{fill:#fcc671;}.bubble-tech-d{fill:none;stroke-width:3px;}.bubble-tech-d,.bubble-tech-g,.bubble-tech-h,.bubble-tech-i{stroke:#000;stroke-miterlimit:10;}.bubble-tech-e{fill:#ce005d;}.bubble-tech-f,.bubble-tech-i{fill:#fff;}.bubble-tech-g{fill:#c7cfe2;}.bubble-tech-h{fill:#ff2c40;}.bubble-tech-i{opacity:0.2;}</style></defs><g transform="translate(-94.555)"><g transform="translate(94.555 64.219)"><path class="bubble-tech-a" d="M281.924,158.091c-33.815-4.35-78.582-28.425-123-31.055a44.833,44.833,0,0,0-12.365.961c-3.382.809-69.8,10.571-32.1,65.2C131.32,217.571,98.01,242.91,95.032,266.48c-7.772,62.059,81.106,109.249,145.506,67.825,22.863-14.718,55.921,7.334,69.5,15.123,24.731,14.263,73.889,7.738,53.549-34.7-4.391-9.256-13.879-35.455-11.255-46.431,7.52-31.105,41.234-45.267,41.386-60.39C394.019,187.123,341.681,165.88,281.924,158.091Z" transform="translate(-94.555 -126.971)"></path><path class="bubble-tech-b" d="M366.274,337.172c-3.785-9.053-11.457-34.646-8.277-45.014,9.034-29.285,42.4-40.918,43.455-55.282,1.464-19.877-47.9-43.143-105.231-54.017-32.4-6.171-74.292-31.763-117.091-36.77a43.2,43.2,0,0,0-12.012.2c-3.331.556-68.085,6.12-34.673,60.491,14.939,24.328-18.725,46.633-22.914,68.988-11,58.873,72.274,109.1,136.775,73.186,22.914-12.8,53.6,10.166,66.268,18.41,7.924,5.159,18.775,8.143,28.92,8.143v-.051C360.874,375.459,377.58,364.585,366.274,337.172Z" transform="translate(-101.484 -136.261)"></path></g><g transform="translate(124.456 0)"><g transform="translate(15.04 227.045)"><path d="M378.869,448.9H205.554a21.974,21.974,0,0,0-21.2,27.666l.555,2.225a81.61,81.61,0,0,0,10.145,23.064c26.4,11.785,59.3,13.1,88.424-3.085,22.914-12.8,53.6,10.166,66.268,18.41a52.687,52.687,0,0,0,19.582,7.334,80.869,80.869,0,0,0,31.948-46.633A23.178,23.178,0,0,0,378.869,448.9Z" transform="translate(-183.599 -448.9)"></path><path class="bubble-tech-c" d="M254.2,458.5l51.026,51.134a94.231,94.231,0,0,0,13.223-6.12c11.406-6.373,24.73-3.895,36.843,1.264l46.13-46.279A116.927,116.927,0,0,1,254.2,458.5Z" transform="translate(-218.567 -453.645)"></path><g transform="translate(81.46 35.759)"><line class="bubble-tech-d" x2="2.624" y2="6.069"></line><line class="bubble-tech-d" x2="2.675" y2="6.019" transform="translate(8.529 2.377)"></line><line class="bubble-tech-d" x2="2.524" y2="6.12" transform="translate(24.074 3.085)"></line><line class="bubble-tech-d" x2="2.473" y2="6.019" transform="translate(37.298 2.377)"></line><line class="bubble-tech-d" x2="2.574" y2="6.019" transform="translate(17.867 5.058)"></line><line class="bubble-tech-d" x2="2.675" y2="6.019" transform="translate(46.433 2.377)"></line></g></g><g transform="translate(5.211 24.884)"><ellipse class="bubble-tech-c" cx="117.243" cy="117.493" rx="117.243" ry="117.493" transform="translate(1.804 0.202)"></ellipse><path d="M283.172,57.09A111.49,111.49,0,0,1,361.8,247.314a111.322,111.322,0,0,1-157.266-157.6A110.579,110.579,0,0,1,283.172,57.09m0-7.89a118.569,118.569,0,0,0-84.185,34.949c-46.483,46.582-46.483,122.146,0,168.627a118.865,118.865,0,0,0,168.369,0c46.483-46.582,46.483-122.146,0-168.627A118.272,118.272,0,0,0,283.172,49.2Z" transform="translate(-164.125 -49.2)"></path></g><g transform="translate(39.014 163.064)"><path class="bubble-tech-e" d="M316.344,408.025A85.183,85.183,0,0,0,401.488,322.7H231.1A85.4,85.4,0,0,0,316.344,408.025Z" transform="translate(-231.1 -322.548)"></path><path class="bubble-tech-f" d="M495.425,343.335c0,.759-.5,1.568-1.211,1.568h-10.7A1.679,1.679,0,0,1,482,343.335V332.613c0-.759.757-1.113,1.514-1.113h10.7c.757,0,1.211.354,1.211,1.113Z" transform="translate(-355.37 -326.897)"></path><path class="bubble-tech-f" d="M528.225,343.335c0,.759-.5,1.568-1.211,1.568h-10.7a1.679,1.679,0,0,1-1.514-1.568V332.613c0-.759.757-1.113,1.514-1.113h10.7c.757,0,1.211.354,1.211,1.113Z" transform="translate(-371.615 -326.897)"></path><path class="bubble-tech-f" d="M350.113,455.8h-10.7A1.446,1.446,0,0,0,338,457.216v9.053a5.25,5.25,0,0,1,1.413-.2,3.664,3.664,0,0,1,3.735,3.288h6.965a1.446,1.446,0,0,0,1.413-1.416V457.216A1.521,1.521,0,0,0,350.113,455.8Z" transform="translate(-284.047 -388.329)"></path><path class="bubble-tech-f" d="M306.159,459.088c1.363,1.77,4.795,2.782,6.814,3.54a51.178,51.178,0,0,0,5.754,1.922v-7.334a1.446,1.446,0,0,0-1.413-1.416h-10.7a1.446,1.446,0,0,0-1.413,1.416v1.012A2.574,2.574,0,0,1,306.159,459.088Z" transform="translate(-267.801 -388.329)"></path><path class="bubble-tech-f" d="M384.526,468.339a1.446,1.446,0,0,1-1.413,1.416h-10.7A1.446,1.446,0,0,1,371,468.339V457.616a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-300.392 -388.527)"></path><path class="bubble-tech-f" d="M417.126,468.339a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V457.616a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-316.539 -388.527)"></path><path class="bubble-tech-f" d="M447.7,465.559a3.97,3.97,0,0,1,2.221.658v-9.1a.97.97,0,0,0-1.11-1.113h-10.7c-.757,0-1.615.354-1.615,1.113v10.723a1.777,1.777,0,0,0,1.615,1.568h5.855A3.6,3.6,0,0,1,447.7,465.559Z" transform="translate(-332.834 -388.428)"></path><path class="bubble-tech-f" d="M481.161,458.228a4.3,4.3,0,0,1,1.464-.708v-.607a.969.969,0,0,0-1.11-1.113h-10.7c-.757,0-1.615.354-1.615,1.113V464.7C473.692,464.5,477.78,460.757,481.161,458.228Z" transform="translate(-349.03 -388.329)"></path><path class="bubble-tech-f" d="M462.476,343.335c0,.759-.5,1.568-1.211,1.568h-10.75A1.679,1.679,0,0,1,449,343.335V332.613c0-.759.757-1.113,1.514-1.113h10.7c.757,0,1.211.354,1.211,1.113v10.723Z" transform="translate(-339.025 -326.897)"></path><path class="bubble-tech-f" d="M429.726,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-322.779 -326.799)"></path><path class="bubble-tech-f" d="M396.826,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416v10.723Z" transform="translate(-306.484 -326.799)"></path><path class="bubble-tech-f" d="M364.126,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-290.288 -326.799)"></path><path class="bubble-tech-f" d="M331.426,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-274.092 -326.799)"></path><path class="bubble-tech-f" d="M298.426,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416v10.723Z" transform="translate(-257.747 -326.799)"></path><path class="bubble-tech-f" d="M265.726,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-241.551 -326.799)"></path><path d="M397.551,326.446c-2.17,43.042-37.7,77.435-81.207,77.435a81.359,81.359,0,0,1-81.106-77.435H397.551m4.038-4.046H231.1a85.245,85.245,0,1,0,170.489,0Z" transform="translate(-231.1 -322.4)"></path></g><g transform="translate(2.826)"><path d="M407.3,55.891,513.944,158.059a104.013,104.013,0,0,0-7.571-40.816,105.317,105.317,0,0,0-21.753-30.549A108.153,108.153,0,0,0,407.3,55.891Z" transform="translate(-282.184 -27.618)"></path><path d="M278.027,55.891,171.383,158.059a104.013,104.013,0,0,1,7.571-40.816,105.316,105.316,0,0,1,21.753-30.549A107.988,107.988,0,0,1,278.027,55.891Z" transform="translate(-165.327 -27.618)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(64.653 9.458)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(92.966 11.835)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(106.442 5.462)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(133.191 5.462)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(139.45 18.107)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(159.184 23.62)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(172.609 36.315)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(86.708 9.458)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(40.174 23.62)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(49.612 18.107)"></ellipse><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 38.498, 70.104)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(61.422 30.043)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(136.371 33.129)"></ellipse><ellipse cx="18.3" cy="18.264" rx="18.3" ry="18.264" transform="translate(152.571 78.221) rotate(-78.018)"></ellipse><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 21.893, 70.104)"></path><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 14.777, 84.367)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(177.252 48.15)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(167.007 48.15)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(109.521 33.129)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(82.771 33.129)"></ellipse><path d="M18.317,0A18.279,18.279,0,1,1,0,18.295,18.251,18.251,0,0,1,18.317,0Z" transform="matrix(0.464, -0.886, 0.886, 0.464, 18.778, 77.381)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(59.908 36.315)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(8.63 54.473)"></ellipse><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 14.777, 66.21)"></path><path d="M18.317,0A18.28,18.28,0,1,1,0,18.3,18.25,18.25,0,0,1,18.317,0Z" transform="translate(18.57 47.418) rotate(-60.797)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(206.474 82.897)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(195.421 66.358)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(188.406 51.337)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(177.252 59.935)"></ellipse><path d="M18.317,0A18.279,18.279,0,1,1,0,18.295,18.251,18.251,0,0,1,18.317,0Z" transform="matrix(0.464, -0.886, 0.886, 0.464, 6.978, 92.411)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(0 69.444)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(7.066 48.15)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(10.952 36.315)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(46.483 11.835)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(79.592)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(49.612)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(1.565 78.143)"></ellipse></g><g transform="translate(0 96.301)"><path class="bubble-tech-g" d="M396.058,250.234h-236a6.3,6.3,0,0,1-6.258-6.272v-47.29a6.3,6.3,0,0,1,6.258-6.272H396.007a6.3,6.3,0,0,1,6.258,6.272v47.29A6.189,6.189,0,0,1,396.058,250.234Z" transform="translate(-153.8 -190.4)"></path><path class="bubble-tech-h" d="M395.872,249.411H179.758a6.3,6.3,0,0,1-6.258-6.272V215.372a6.3,6.3,0,0,1,6.258-6.272H395.872a6.3,6.3,0,0,1,6.258,6.272v27.767A6.33,6.33,0,0,1,395.872,249.411Z" transform="translate(-163.557 -199.642)"></path><path class="bubble-tech-i" d="M531.039,209H486.675L446.4,249.361h84.639a6.3,6.3,0,0,0,6.258-6.272V215.322A6.307,6.307,0,0,0,531.039,209Z" transform="translate(-298.724 -199.592)"></path><path class="bubble-tech-i" d="M426.675,209.3,386.4,249.1h15.141l40.225-39.8Z" transform="translate(-269.006 -199.741)"></path></g></g></g></svg>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 303.468" style="width:20%;"><defs><style>.bubble-tech-a,.bubble-tech-b{fill:white;}.bubble-tech-a{opacity:0.3;}.bubble-tech-c{fill:#fcc671;}.bubble-tech-d{fill:none;stroke-width:3px;}.bubble-tech-d,.bubble-tech-g,.bubble-tech-h,.bubble-tech-i{stroke:#000;stroke-miterlimit:10;}.bubble-tech-e{fill:#ce005d;}.bubble-tech-f,.bubble-tech-i{fill:#fff;}.bubble-tech-g{fill:#c7cfe2;}.bubble-tech-h{fill:#ff2c40;}.bubble-tech-i{opacity:0.2;}</style></defs><g transform="translate(-94.555)"><g transform="translate(94.555 64.219)"><path class="bubble-tech-a" d="M281.924,158.091c-33.815-4.35-78.582-28.425-123-31.055a44.833,44.833,0,0,0-12.365.961c-3.382.809-69.8,10.571-32.1,65.2C131.32,217.571,98.01,242.91,95.032,266.48c-7.772,62.059,81.106,109.249,145.506,67.825,22.863-14.718,55.921,7.334,69.5,15.123,24.731,14.263,73.889,7.738,53.549-34.7-4.391-9.256-13.879-35.455-11.255-46.431,7.52-31.105,41.234-45.267,41.386-60.39C394.019,187.123,341.681,165.88,281.924,158.091Z" transform="translate(-94.555 -126.971)"></path><path class="bubble-tech-b" d="M366.274,337.172c-3.785-9.053-11.457-34.646-8.277-45.014,9.034-29.285,42.4-40.918,43.455-55.282,1.464-19.877-47.9-43.143-105.231-54.017-32.4-6.171-74.292-31.763-117.091-36.77a43.2,43.2,0,0,0-12.012.2c-3.331.556-68.085,6.12-34.673,60.491,14.939,24.328-18.725,46.633-22.914,68.988-11,58.873,72.274,109.1,136.775,73.186,22.914-12.8,53.6,10.166,66.268,18.41,7.924,5.159,18.775,8.143,28.92,8.143v-.051C360.874,375.459,377.58,364.585,366.274,337.172Z" transform="translate(-101.484 -136.261)"></path></g><g transform="translate(124.456 0)"><g transform="translate(15.04 227.045)"><path d="M378.869,448.9H205.554a21.974,21.974,0,0,0-21.2,27.666l.555,2.225a81.61,81.61,0,0,0,10.145,23.064c26.4,11.785,59.3,13.1,88.424-3.085,22.914-12.8,53.6,10.166,66.268,18.41a52.687,52.687,0,0,0,19.582,7.334,80.869,80.869,0,0,0,31.948-46.633A23.178,23.178,0,0,0,378.869,448.9Z" transform="translate(-183.599 -448.9)"></path><path class="bubble-tech-c" d="M254.2,458.5l51.026,51.134a94.231,94.231,0,0,0,13.223-6.12c11.406-6.373,24.73-3.895,36.843,1.264l46.13-46.279A116.927,116.927,0,0,1,254.2,458.5Z" transform="translate(-218.567 -453.645)"></path><g transform="translate(81.46 35.759)"><line class="bubble-tech-d" x2="2.624" y2="6.069"></line><line class="bubble-tech-d" x2="2.675" y2="6.019" transform="translate(8.529 2.377)"></line><line class="bubble-tech-d" x2="2.524" y2="6.12" transform="translate(24.074 3.085)"></line><line class="bubble-tech-d" x2="2.473" y2="6.019" transform="translate(37.298 2.377)"></line><line class="bubble-tech-d" x2="2.574" y2="6.019" transform="translate(17.867 5.058)"></line><line class="bubble-tech-d" x2="2.675" y2="6.019" transform="translate(46.433 2.377)"></line></g></g><g transform="translate(5.211 24.884)"><ellipse class="bubble-tech-c" cx="117.243" cy="117.493" rx="117.243" ry="117.493" transform="translate(1.804 0.202)"></ellipse><path d="M283.172,57.09A111.49,111.49,0,0,1,361.8,247.314a111.322,111.322,0,0,1-157.266-157.6A110.579,110.579,0,0,1,283.172,57.09m0-7.89a118.569,118.569,0,0,0-84.185,34.949c-46.483,46.582-46.483,122.146,0,168.627a118.865,118.865,0,0,0,168.369,0c46.483-46.582,46.483-122.146,0-168.627A118.272,118.272,0,0,0,283.172,49.2Z" transform="translate(-164.125 -49.2)"></path></g><g transform="translate(39.014 163.064)"><path class="bubble-tech-e" d="M316.344,408.025A85.183,85.183,0,0,0,401.488,322.7H231.1A85.4,85.4,0,0,0,316.344,408.025Z" transform="translate(-231.1 -322.548)"></path><path class="bubble-tech-f" d="M495.425,343.335c0,.759-.5,1.568-1.211,1.568h-10.7A1.679,1.679,0,0,1,482,343.335V332.613c0-.759.757-1.113,1.514-1.113h10.7c.757,0,1.211.354,1.211,1.113Z" transform="translate(-355.37 -326.897)"></path><path class="bubble-tech-f" d="M528.225,343.335c0,.759-.5,1.568-1.211,1.568h-10.7a1.679,1.679,0,0,1-1.514-1.568V332.613c0-.759.757-1.113,1.514-1.113h10.7c.757,0,1.211.354,1.211,1.113Z" transform="translate(-371.615 -326.897)"></path><path class="bubble-tech-f" d="M350.113,455.8h-10.7A1.446,1.446,0,0,0,338,457.216v9.053a5.25,5.25,0,0,1,1.413-.2,3.664,3.664,0,0,1,3.735,3.288h6.965a1.446,1.446,0,0,0,1.413-1.416V457.216A1.521,1.521,0,0,0,350.113,455.8Z" transform="translate(-284.047 -388.329)"></path><path class="bubble-tech-f" d="M306.159,459.088c1.363,1.77,4.795,2.782,6.814,3.54a51.178,51.178,0,0,0,5.754,1.922v-7.334a1.446,1.446,0,0,0-1.413-1.416h-10.7a1.446,1.446,0,0,0-1.413,1.416v1.012A2.574,2.574,0,0,1,306.159,459.088Z" transform="translate(-267.801 -388.329)"></path><path class="bubble-tech-f" d="M384.526,468.339a1.446,1.446,0,0,1-1.413,1.416h-10.7A1.446,1.446,0,0,1,371,468.339V457.616a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-300.392 -388.527)"></path><path class="bubble-tech-f" d="M417.126,468.339a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V457.616a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-316.539 -388.527)"></path><path class="bubble-tech-f" d="M447.7,465.559a3.97,3.97,0,0,1,2.221.658v-9.1a.97.97,0,0,0-1.11-1.113h-10.7c-.757,0-1.615.354-1.615,1.113v10.723a1.777,1.777,0,0,0,1.615,1.568h5.855A3.6,3.6,0,0,1,447.7,465.559Z" transform="translate(-332.834 -388.428)"></path><path class="bubble-tech-f" d="M481.161,458.228a4.3,4.3,0,0,1,1.464-.708v-.607a.969.969,0,0,0-1.11-1.113h-10.7c-.757,0-1.615.354-1.615,1.113V464.7C473.692,464.5,477.78,460.757,481.161,458.228Z" transform="translate(-349.03 -388.329)"></path><path class="bubble-tech-f" d="M462.476,343.335c0,.759-.5,1.568-1.211,1.568h-10.75A1.679,1.679,0,0,1,449,343.335V332.613c0-.759.757-1.113,1.514-1.113h10.7c.757,0,1.211.354,1.211,1.113v10.723Z" transform="translate(-339.025 -326.897)"></path><path class="bubble-tech-f" d="M429.726,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-322.779 -326.799)"></path><path class="bubble-tech-f" d="M396.826,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416v10.723Z" transform="translate(-306.484 -326.799)"></path><path class="bubble-tech-f" d="M364.126,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-290.288 -326.799)"></path><path class="bubble-tech-f" d="M331.426,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-274.092 -326.799)"></path><path class="bubble-tech-f" d="M298.426,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416v10.723Z" transform="translate(-257.747 -326.799)"></path><path class="bubble-tech-f" d="M265.726,343.439a1.446,1.446,0,0,1-1.413,1.416h-10.7a1.446,1.446,0,0,1-1.413-1.416V332.716a1.446,1.446,0,0,1,1.413-1.416h10.7a1.446,1.446,0,0,1,1.413,1.416Z" transform="translate(-241.551 -326.799)"></path><path d="M397.551,326.446c-2.17,43.042-37.7,77.435-81.207,77.435a81.359,81.359,0,0,1-81.106-77.435H397.551m4.038-4.046H231.1a85.245,85.245,0,1,0,170.489,0Z" transform="translate(-231.1 -322.4)"></path></g><g transform="translate(2.826)" style="fill: #f8e22a;"><path d="M407.3,55.891,513.944,158.059a104.013,104.013,0,0,0-7.571-40.816,105.317,105.317,0,0,0-21.753-30.549A108.153,108.153,0,0,0,407.3,55.891Z" transform="translate(-282.184 -27.618)"></path><path d="M278.027,55.891,171.383,158.059a104.013,104.013,0,0,1,7.571-40.816,105.316,105.316,0,0,1,21.753-30.549A107.988,107.988,0,0,1,278.027,55.891Z" transform="translate(-165.327 -27.618)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(64.653 9.458)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(92.966 11.835)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(106.442 5.462)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(133.191 5.462)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(139.45 18.107)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(159.184 23.62)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(172.609 36.315)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(86.708 9.458)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(40.174 23.62)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(49.612 18.107)"></ellipse><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 38.498, 70.104)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(61.422 30.043)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(136.371 33.129)"></ellipse><ellipse cx="18.3" cy="18.264" rx="18.3" ry="18.264" transform="translate(152.571 78.221) rotate(-78.018)"></ellipse><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 21.893, 70.104)"></path><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 14.777, 84.367)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(177.252 48.15)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(167.007 48.15)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(109.521 33.129)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(82.771 33.129)"></ellipse><path d="M18.317,0A18.279,18.279,0,1,1,0,18.295,18.251,18.251,0,0,1,18.317,0Z" transform="matrix(0.464, -0.886, 0.886, 0.464, 18.778, 77.381)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(59.908 36.315)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(8.63 54.473)"></ellipse><path d="M18.317,0A18.274,18.274,0,1,1,0,18.286,18.262,18.262,0,0,1,18.317,0Z" transform="matrix(0.316, -0.949, 0.949, 0.316, 14.777, 66.21)"></path><path d="M18.317,0A18.28,18.28,0,1,1,0,18.3,18.25,18.25,0,0,1,18.317,0Z" transform="translate(18.57 47.418) rotate(-60.797)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(206.474 82.897)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(195.421 66.358)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(188.406 51.337)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(177.252 59.935)"></ellipse><path d="M18.317,0A18.279,18.279,0,1,1,0,18.295,18.251,18.251,0,0,1,18.317,0Z" transform="matrix(0.464, -0.886, 0.886, 0.464, 6.978, 92.411)"></path><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(0 69.444)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(7.066 48.15)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(10.952 36.315)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(46.483 11.835)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(79.592)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(49.612)"></ellipse><ellipse cx="18.27" cy="18.309" rx="18.27" ry="18.309" transform="translate(1.565 78.143)"></ellipse></g><g transform="translate(0 96.301)"><path class="bubble-tech-g" d="M396.058,250.234h-236a6.3,6.3,0,0,1-6.258-6.272v-47.29a6.3,6.3,0,0,1,6.258-6.272H396.007a6.3,6.3,0,0,1,6.258,6.272v47.29A6.189,6.189,0,0,1,396.058,250.234Z" transform="translate(-153.8 -190.4)"></path><path class="bubble-tech-h" d="M395.872,249.411H179.758a6.3,6.3,0,0,1-6.258-6.272V215.372a6.3,6.3,0,0,1,6.258-6.272H395.872a6.3,6.3,0,0,1,6.258,6.272v27.767A6.33,6.33,0,0,1,395.872,249.411Z" transform="translate(-163.557 -199.642)"></path><path class="bubble-tech-i" d="M531.039,209H486.675L446.4,249.361h84.639a6.3,6.3,0,0,0,6.258-6.272V215.322A6.307,6.307,0,0,0,531.039,209Z" transform="translate(-298.724 -199.592)"></path><path class="bubble-tech-i" d="M426.675,209.3,386.4,249.1h15.141l40.225-39.8Z" transform="translate(-269.006 -199.741)"></path></g></g></g></svg>
                 </div>
               </div>
             </div>
@@ -255,7 +256,7 @@
             <div class="slide-elem">
               <div class="slide-img">
                 <div style="margin-top: 20%;">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300.004" style="width:20%;"><defs><style>.bubble-support-a,.bubble-support-b{fill:white;}.bubble-support-a{opacity:0.3;}.bubble-support-c{fill:#ffe32a;}.bubble-support-d{fill:#fff;}.bubble-support-e{fill:#fcc671;}.bubble-support-f{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}.bubble-support-g{fill:#ce005d;}.bubble-support-h{fill:#212121;}</style></defs><g transform="translate(-77.428 45.943)"><g transform="translate(94.574 56.001)"><path class="bubble-support-a" d="M369.633,229.672c-5.208,7.615-17.3,29.576-16.368,39.7,2.6,28.647,31.062,45.78,29.249,59.152-2.464,18.526-52.452,30.319-107.369,29.112-31.062-.7-74.586,14.672-114.949,10.957a40.2,40.2,0,0,1-11.021-2.507c-2.93-1.161-61.473-18.8-20.181-62.216,18.461-19.361-8.184-46.43-7.719-67.741,1.3-56.134,87.7-86.035,140.152-40.533,18.647,16.158,51.336,1.068,64.589-3.993C350.243,182.267,393.628,194.71,369.633,229.672Z" transform="translate(-114.301 -173.398)"></path><path class="bubble-support-b" d="M366.3,235.319c-4.976,7.615-16.461,29.529-15.392,39.466,2.976,28.229,31.016,44.666,29.435,57.9-2.139,18.34-50.825,30.83-104.486,30.6-30.365-.139-72.68,15.74-112.159,12.815a38.424,38.424,0,0,1-10.788-2.275c-2.883-1.068-60.357-17.5-20.646-61.055,17.717-19.454-8.7-45.687-8.51-66.72.418-55.437,84.444-86.453,136.339-42.437,18.414,15.647,50.174.186,63.054-5.061C346.631,188.889,389.225,200.4,366.3,235.319Z" transform="translate(-116.455 -178.395)"></path></g><g transform="translate(77.428 -45.943)"><g transform="translate(55.063 229.581)"><path class="bubble-support-c" d="M370.85,501.277a69.366,69.366,0,0,0,14.136-27.9,20.106,20.106,0,0,0-19.53-25.072H214.934a19.107,19.107,0,0,0-18.461,23.958l.465,1.95A70.425,70.425,0,0,0,231.4,517.991c31.248-2.832,62.264-12.49,85.932-12.4A307.765,307.765,0,0,0,370.85,501.277Z" transform="translate(-195.842 -448.3)"></path><path class="bubble-support-d" d="M389.809,459.146A107.827,107.827,0,0,1,254.4,459.1l50.406,58.038c14.276-2.693,27.714-5.247,39.572-5.711Z" transform="translate(-227.171 -454.086)"></path><path class="bubble-support-e" d="M254.4,460.3l67.751,53.627,67.658-53.58C350.423,479.429,293.739,479.336,254.4,460.3Z" transform="translate(-227.171 -454.728)"></path><g transform="translate(80.007 36.123)"><line class="bubble-support-f" x2="2.465" y2="5.525"></line><line class="bubble-support-f" x2="2.418" y2="5.618" transform="translate(11.439 0.65)"></line><line class="bubble-support-f" x2="2.372" y2="5.525" transform="translate(8.324 5.386)"></line><line class="bubble-support-f" x2="2.418" y2="5.572" transform="translate(17.996 3.297)"></line><line class="bubble-support-f" x2="2.418" y2="5.525" transform="translate(23.576)"></line></g></g><g transform="translate(0 0)"><circle class="bubble-support-e" cx="106.067" cy="106.067" r="106.067" transform="translate(0 150) rotate(-45)"></circle><path d="M276.054,55.4a100.42,100.42,0,1,1-71.145,29.39A100.04,100.04,0,0,1,276.054,55.4m0-7.2a107.509,107.509,0,1,0,76.167,31.48A107.348,107.348,0,0,0,276.054,48.2Z" transform="translate(-126.058 -4.386)"></path></g><g transform="translate(72.9 168.479)"><path class="bubble-support-g" d="M311.3,393.835A76.971,76.971,0,0,0,388.348,316.9H234.2A77.07,77.07,0,0,0,311.3,393.835Z" transform="translate(-234.2 -316.807)"></path><g transform="translate(10.649 4.039)"><path class="bubble-support-d" d="M494.837,336.179c0,.7-.465,1.439-1.116,1.439h-9.672a1.5,1.5,0,0,1-1.349-1.439v-9.657c0-.7.7-1.021,1.349-1.021h9.672c.7,0,1.116.325,1.116,1.021Z" transform="translate(-377.795 -325.454)"></path><path class="bubble-support-d" d="M527.037,336.179c0,.7-.465,1.439-1.116,1.439h-9.672a1.5,1.5,0,0,1-1.349-1.439v-9.657c0-.7.7-1.021,1.349-1.021h9.672c.7,0,1.116.325,1.116,1.021Z" transform="translate(-395.022 -325.454)"></path><path class="bubble-support-d" d="M352.128,447.7h-9.672a1.249,1.249,0,0,0-1.255,1.254v8.125a4.779,4.779,0,0,1,1.255-.186,3.357,3.357,0,0,1,3.395,2.972h6.278a1.249,1.249,0,0,0,1.255-1.254v-9.657A1.28,1.28,0,0,0,352.128,447.7Z" transform="translate(-302.093 -390.916)"></path><path class="bubble-support-d" d="M309.884,450.779c1.209,1.579,4.324,2.507,6.138,3.2,1.72.6,3.395,1.254,5.162,1.764v-6.593a1.249,1.249,0,0,0-1.256-1.254h-9.672A1.249,1.249,0,0,0,309,449.154v.929A1.3,1.3,0,0,1,309.884,450.779Z" transform="translate(-284.866 -391.023)"></path><path class="bubble-support-d" d="M385.883,459.011a1.249,1.249,0,0,1-1.255,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.255,1.254Z" transform="translate(-319.481 -391.13)"></path><path class="bubble-support-d" d="M417.983,459.011a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-336.654 -391.13)"></path><path class="bubble-support-d" d="M448.03,456.436a3.759,3.759,0,0,1,2,.557v-8.172a.892.892,0,0,0-1.023-1.021h-9.719c-.7,0-1.488.325-1.488,1.021v9.657a1.634,1.634,0,0,0,1.488,1.439h5.3A3.326,3.326,0,0,1,448.03,456.436Z" transform="translate(-353.774 -390.97)"></path><path class="bubble-support-d" d="M480.781,449.936a4,4,0,0,1,1.3-.6v-.511a.892.892,0,0,0-1.023-1.021h-9.672c-.7,0-1.488.325-1.488,1.021v7.057C473.992,455.554,477.712,452.211,480.781,449.936Z" transform="translate(-370.947 -390.97)"></path><path class="bubble-support-d" d="M462.437,336.179c0,.7-.465,1.439-1.116,1.439h-9.672a1.5,1.5,0,0,1-1.349-1.439v-9.657c0-.7.7-1.021,1.349-1.021h9.672c.7,0,1.116.325,1.116,1.021Z" transform="translate(-360.462 -325.454)"></path><path class="bubble-support-d" d="M430.283,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-343.235 -325.4)"></path><path class="bubble-support-d" d="M397.983,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254v9.657Z" transform="translate(-325.954 -325.4)"></path><path class="bubble-support-d" d="M365.883,336.311a1.249,1.249,0,0,1-1.255,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.255,1.254Z" transform="translate(-308.781 -325.4)"></path><path class="bubble-support-d" d="M333.683,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-291.554 -325.4)"></path><path class="bubble-support-d" d="M301.383,336.311a1.249,1.249,0,0,1-1.255,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.255,1.254v9.657Z" transform="translate(-274.273 -325.4)"></path><path class="bubble-support-d" d="M269.283,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-257.1 -325.4)"></path></g><path d="M384.768,320.322a73.516,73.516,0,0,1-146.848,0H384.768m3.627-3.622H234.2a77.1,77.1,0,0,0,154.195,0Z" transform="translate(-234.2 -316.7)"></path></g><g transform="translate(71.784 126.831)"><path d="M252.865,241.765a21.372,21.372,0,0,1,20.321,14.625,20.675,20.675,0,0,0,1.581-7.94,21.483,21.483,0,0,0-42.966,0,22.032,22.032,0,0,0,1.116,6.779A21.452,21.452,0,0,1,252.865,241.765Z" transform="translate(-231.8 -227)"></path><path d="M492.065,241.765a21.372,21.372,0,0,1,20.321,14.625,20.675,20.675,0,0,0,1.581-7.94,21.483,21.483,0,0,0-42.966,0,22.032,22.032,0,0,0,1.116,6.779A21.548,21.548,0,0,1,492.065,241.765Z" transform="translate(-359.771 -227)"></path></g><g transform="translate(40.442 21.435)"><path d="M407.2,54.89l96.3,92.117a93.171,93.171,0,0,0-6.836-36.773,94.941,94.941,0,0,0-19.623-27.579A97.917,97.917,0,0,0,407.2,54.89Z" transform="translate(-294.297 -29.4)"></path><path d="M272.183,54.89l-96.3,92.071a93.17,93.17,0,0,1,6.836-36.773A94.941,94.941,0,0,1,202.34,82.609,97.913,97.913,0,0,1,272.183,54.89Z" transform="translate(-170.534 -29.4)"></path><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(58.311 8.543)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(83.886 10.679)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(96.069 4.968)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(120.203 4.968)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(125.876 16.39)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(143.639 21.311)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(155.776 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(78.213 8.543)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(36.224 21.311)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(44.733 16.39)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(39.06 36.262)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(55.382 27.069)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(123.04 29.901)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(140.803 41.276)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(24.134 36.262)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(17.717 49.123)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(160.007 43.459)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(150.754 43.459)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(98.859 29.901)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(74.679 29.901)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(22.692 46.291)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(54.08 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(7.719 49.123)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(17.717 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(22.692 19.918)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(186.373 74.752)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(176.422 59.802)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(170.005 46.291)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(160.007 54.091)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(11.997 59.802)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(0 62.681)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(6.324 43.459)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(9.858 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(41.943 10.679)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(71.796)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(44.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(1.349 70.434)"></ellipse></g><g transform="translate(4.265 25.567)"><path class="bubble-support-h" d="M126.7,143.5c-.046-1.207-.093-2.368-.093-3.575C125.394,73.391,179.334,18.511,246.945,17.4S370.5,69.166,371.659,135.7c.046,2.6,0,5.247-.093,7.8h8.6c.047-1.857.093-3.761.093-5.664C380.261,66.613,321.578,8.9,249.131,8.9S118,66.613,118,137.836c0,1.95.047,3.807.093,5.665h8.6Z" transform="translate(-103.399 -8.9)"></path><ellipse class="bubble-support-h" cx="18.6" cy="43.784" rx="18.6" ry="43.784" transform="translate(13.253 89.656)"></ellipse><ellipse class="bubble-support-h" cx="17.67" cy="43.784" rx="17.67" ry="43.784" transform="translate(240.639 89.656)"></ellipse><g transform="translate(0 80.742)"><path class="bubble-support-d" d="M106.435,288.539a4.829,4.829,0,0,1-4.836-4.829v-2.136h-.883c-6,0-12.416-18.247-12.416-45.362,0-27.162,6.417-45.362,12.416-45.362h.837v-1.021A4.829,4.829,0,0,1,106.389,185H107.5a4.829,4.829,0,0,1,4.836,4.829v31.015a149.914,149.914,0,0,1,.744,15.368,150.564,150.564,0,0,1-.744,15.368V283.8a4.829,4.829,0,0,1-4.836,4.829h-1.116v-.093Z" transform="translate(-87.509 -183.979)"></path><path d="M106.642,184.518a3.966,3.966,0,0,1,4,3.993v31.247a147.179,147.179,0,0,1,.744,15.229,147.18,147.18,0,0,1-.744,15.229v32.362a3.966,3.966,0,0,1-4,3.993h-1.116a3.966,3.966,0,0,1-4-3.993v-2.972H99.806c-2.046,0-5.115-3.25-7.766-12.3-2.465-8.775-3.813-20.2-3.813-32.408s1.348-23.633,3.813-32.222c2.6-9.1,5.673-12.3,7.766-12.3h1.721v-1.9a3.966,3.966,0,0,1,4-3.993h1.116m0-1.671h-1.116a5.691,5.691,0,0,0-5.673,5.664v.186C92.506,188.7,86.6,209.4,86.6,234.941s5.906,46.244,13.253,46.244v1.3a5.691,5.691,0,0,0,5.673,5.664h1.116a5.691,5.691,0,0,0,5.673-5.664V250.309a147.629,147.629,0,0,0,.744-15.415c0-5.386-.279-10.586-.744-15.415V188.464a5.632,5.632,0,0,0-5.673-5.664Z" transform="translate(-86.6 -182.8)"></path></g><g transform="translate(264.958 80.742)"><path class="bubble-support-d" d="M663.354,288.378a4.829,4.829,0,0,1-4.836-4.829V246.87c-.233-3.575-.419-7.29-.419-10.911s.093-7.336.419-10.911V189.529a4.829,4.829,0,0,1,4.836-4.829h1.116a4.829,4.829,0,0,1,4.836,4.829v1.114l1.069-.093h.186c6,0,12.416,18.247,12.416,45.362,0,27.162-6.417,45.362-12.416,45.362h-.186l-1.069-.093v2.275a4.829,4.829,0,0,1-4.836,4.829h-1.116Z" transform="translate(-657.309 -183.818)"></path><path d="M663.608,184.518a3.966,3.966,0,0,1,4,3.993V190.6l1.86-.186h.232c2.046,0,5.115,3.25,7.766,12.3,2.464,8.59,3.813,20.011,3.813,32.222s-1.349,23.633-3.813,32.222c-2.6,9.1-5.673,12.3-7.766,12.35h-.279l-1.814-.232v3.2a3.966,3.966,0,0,1-4,3.993h-1.116a3.966,3.966,0,0,1-4-3.993V245.759c-.232-3.575-.419-7.243-.419-10.865s.093-7.29.419-10.865V188.464a3.966,3.966,0,0,1,4-3.993l1.116.046m0-1.718h-1.116a5.691,5.691,0,0,0-5.673,5.664v35.473c-.232,3.529-.418,7.15-.418,10.958s.093,7.429.418,10.957v36.633a5.691,5.691,0,0,0,5.673,5.664h1.116a5.691,5.691,0,0,0,5.673-5.664v-1.347c.093,0,.233.046.419.046,7.347,0,13.253-20.708,13.253-46.244S677.046,188.7,669.7,188.7a1.6,1.6,0,0,0-.419.046v-.232a5.7,5.7,0,0,0-5.673-5.711Z" transform="translate(-656.4 -182.8)"></path></g><g transform="translate(158.473 148.251)"><path class="bubble-support-d" d="M459.6,388.116a103.455,103.455,0,0,1-29.2-4.132l2.883-4.5a99.881,99.881,0,0,0,26.18,3.482h0a98.215,98.215,0,0,0,79.376-40.023l.326-.511-.326-.511a7.612,7.612,0,0,1-1.441-4.457,7.673,7.673,0,1,1,7.672,7.661,6.889,6.889,0,0,1-.93-.046l-.512-.046-.279.418A102.772,102.772,0,0,1,459.6,388.116Z" transform="translate(-429.005 -329.057)"></path><path d="M543.511,329.918a6.825,6.825,0,1,1,0,13.65,4.794,4.794,0,0,1-.791-.046l-1.023-.093-.558.789a101.3,101.3,0,0,1-36.921,31.387,103.891,103.891,0,0,1-74.121,7.057l1.953-3.018a100.752,100.752,0,0,0,25.854,3.343,99.182,99.182,0,0,0,80.073-40.348l.744-.975-.7-1.021a6.836,6.836,0,0,1-1.255-3.9,6.7,6.7,0,0,1,6.743-6.825m0-1.718a8.527,8.527,0,0,0-8.556,8.543,8.05,8.05,0,0,0,1.581,4.875,96.947,96.947,0,0,1-78.678,39.7,100.323,100.323,0,0,1-26.6-3.622l-3.86,5.989a106.147,106.147,0,0,0,30.6,4.5,103.922,103.922,0,0,0,84.584-42.948,7.207,7.207,0,0,0,.976.046,8.543,8.543,0,1,0-.046-17.086Z" transform="translate(-427.4 -328.2)"></path></g><ellipse cx="11.201" cy="14.79" rx="11.201" ry="14.79" transform="translate(134.454 199.807) rotate(-65.267)"></ellipse></g></g></g></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300.004" style="width:20%;"><defs><style>.bubble-support-a,.bubble-support-b{fill:white;}.bubble-support-a{opacity:0.3;}.bubble-support-c{fill:#212121;}.bubble-support-d{fill:#fff;}.bubble-support-e{fill:#fcc671;}.bubble-support-f{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:3px;}.bubble-support-g{fill:#ce005d;}.bubble-support-h{fill:#212121;}</style></defs><g transform="translate(-77.428 45.943)"><g transform="translate(94.574 56.001)"><path class="bubble-support-a" d="M369.633,229.672c-5.208,7.615-17.3,29.576-16.368,39.7,2.6,28.647,31.062,45.78,29.249,59.152-2.464,18.526-52.452,30.319-107.369,29.112-31.062-.7-74.586,14.672-114.949,10.957a40.2,40.2,0,0,1-11.021-2.507c-2.93-1.161-61.473-18.8-20.181-62.216,18.461-19.361-8.184-46.43-7.719-67.741,1.3-56.134,87.7-86.035,140.152-40.533,18.647,16.158,51.336,1.068,64.589-3.993C350.243,182.267,393.628,194.71,369.633,229.672Z" transform="translate(-114.301 -173.398)"></path><path class="bubble-support-b" d="M366.3,235.319c-4.976,7.615-16.461,29.529-15.392,39.466,2.976,28.229,31.016,44.666,29.435,57.9-2.139,18.34-50.825,30.83-104.486,30.6-30.365-.139-72.68,15.74-112.159,12.815a38.424,38.424,0,0,1-10.788-2.275c-2.883-1.068-60.357-17.5-20.646-61.055,17.717-19.454-8.7-45.687-8.51-66.72.418-55.437,84.444-86.453,136.339-42.437,18.414,15.647,50.174.186,63.054-5.061C346.631,188.889,389.225,200.4,366.3,235.319Z" transform="translate(-116.455 -178.395)"></path></g><g transform="translate(77.428 -45.943)"><g transform="translate(55.063 229.581)"><path class="bubble-support-c" d="M370.85,501.277a69.366,69.366,0,0,0,14.136-27.9,20.106,20.106,0,0,0-19.53-25.072H214.934a19.107,19.107,0,0,0-18.461,23.958l.465,1.95A70.425,70.425,0,0,0,231.4,517.991c31.248-2.832,62.264-12.49,85.932-12.4A307.765,307.765,0,0,0,370.85,501.277Z" transform="translate(-195.842 -448.3)"></path><path class="bubble-support-d" d="M389.809,459.146A107.827,107.827,0,0,1,254.4,459.1l50.406,58.038c14.276-2.693,27.714-5.247,39.572-5.711Z" transform="translate(-227.171 -454.086)"></path><path class="bubble-support-e" d="M254.4,460.3l67.751,53.627,67.658-53.58C350.423,479.429,293.739,479.336,254.4,460.3Z" transform="translate(-227.171 -454.728)"></path><g transform="translate(80.007 36.123)"><line class="bubble-support-f" x2="2.465" y2="5.525"></line><line class="bubble-support-f" x2="2.418" y2="5.618" transform="translate(11.439 0.65)"></line><line class="bubble-support-f" x2="2.372" y2="5.525" transform="translate(8.324 5.386)"></line><line class="bubble-support-f" x2="2.418" y2="5.572" transform="translate(17.996 3.297)"></line><line class="bubble-support-f" x2="2.418" y2="5.525" transform="translate(23.576)"></line></g></g><g transform="translate(0 0)"><circle class="bubble-support-e" cx="106.067" cy="106.067" r="106.067" transform="translate(0 150) rotate(-45)"></circle><path d="M276.054,55.4a100.42,100.42,0,1,1-71.145,29.39A100.04,100.04,0,0,1,276.054,55.4m0-7.2a107.509,107.509,0,1,0,76.167,31.48A107.348,107.348,0,0,0,276.054,48.2Z" transform="translate(-126.058 -4.386)"></path></g><g transform="translate(72.9 168.479)"><path class="bubble-support-g" d="M311.3,393.835A76.971,76.971,0,0,0,388.348,316.9H234.2A77.07,77.07,0,0,0,311.3,393.835Z" transform="translate(-234.2 -316.807)"></path><g transform="translate(10.649 4.039)"><path class="bubble-support-d" d="M494.837,336.179c0,.7-.465,1.439-1.116,1.439h-9.672a1.5,1.5,0,0,1-1.349-1.439v-9.657c0-.7.7-1.021,1.349-1.021h9.672c.7,0,1.116.325,1.116,1.021Z" transform="translate(-377.795 -325.454)"></path><path class="bubble-support-d" d="M527.037,336.179c0,.7-.465,1.439-1.116,1.439h-9.672a1.5,1.5,0,0,1-1.349-1.439v-9.657c0-.7.7-1.021,1.349-1.021h9.672c.7,0,1.116.325,1.116,1.021Z" transform="translate(-395.022 -325.454)"></path><path class="bubble-support-d" d="M352.128,447.7h-9.672a1.249,1.249,0,0,0-1.255,1.254v8.125a4.779,4.779,0,0,1,1.255-.186,3.357,3.357,0,0,1,3.395,2.972h6.278a1.249,1.249,0,0,0,1.255-1.254v-9.657A1.28,1.28,0,0,0,352.128,447.7Z" transform="translate(-302.093 -390.916)"></path><path class="bubble-support-d" d="M309.884,450.779c1.209,1.579,4.324,2.507,6.138,3.2,1.72.6,3.395,1.254,5.162,1.764v-6.593a1.249,1.249,0,0,0-1.256-1.254h-9.672A1.249,1.249,0,0,0,309,449.154v.929A1.3,1.3,0,0,1,309.884,450.779Z" transform="translate(-284.866 -391.023)"></path><path class="bubble-support-d" d="M385.883,459.011a1.249,1.249,0,0,1-1.255,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.255,1.254Z" transform="translate(-319.481 -391.13)"></path><path class="bubble-support-d" d="M417.983,459.011a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-336.654 -391.13)"></path><path class="bubble-support-d" d="M448.03,456.436a3.759,3.759,0,0,1,2,.557v-8.172a.892.892,0,0,0-1.023-1.021h-9.719c-.7,0-1.488.325-1.488,1.021v9.657a1.634,1.634,0,0,0,1.488,1.439h5.3A3.326,3.326,0,0,1,448.03,456.436Z" transform="translate(-353.774 -390.97)"></path><path class="bubble-support-d" d="M480.781,449.936a4,4,0,0,1,1.3-.6v-.511a.892.892,0,0,0-1.023-1.021h-9.672c-.7,0-1.488.325-1.488,1.021v7.057C473.992,455.554,477.712,452.211,480.781,449.936Z" transform="translate(-370.947 -390.97)"></path><path class="bubble-support-d" d="M462.437,336.179c0,.7-.465,1.439-1.116,1.439h-9.672a1.5,1.5,0,0,1-1.349-1.439v-9.657c0-.7.7-1.021,1.349-1.021h9.672c.7,0,1.116.325,1.116,1.021Z" transform="translate(-360.462 -325.454)"></path><path class="bubble-support-d" d="M430.283,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-343.235 -325.4)"></path><path class="bubble-support-d" d="M397.983,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254v9.657Z" transform="translate(-325.954 -325.4)"></path><path class="bubble-support-d" d="M365.883,336.311a1.249,1.249,0,0,1-1.255,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.255,1.254Z" transform="translate(-308.781 -325.4)"></path><path class="bubble-support-d" d="M333.683,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-291.554 -325.4)"></path><path class="bubble-support-d" d="M301.383,336.311a1.249,1.249,0,0,1-1.255,1.254h-9.672a1.249,1.249,0,0,1-1.256-1.254v-9.657a1.249,1.249,0,0,1,1.256-1.254h9.672a1.249,1.249,0,0,1,1.255,1.254v9.657Z" transform="translate(-274.273 -325.4)"></path><path class="bubble-support-d" d="M269.283,336.311a1.249,1.249,0,0,1-1.256,1.254h-9.672a1.249,1.249,0,0,1-1.255-1.254v-9.657a1.249,1.249,0,0,1,1.255-1.254h9.672a1.249,1.249,0,0,1,1.256,1.254Z" transform="translate(-257.1 -325.4)"></path></g><path d="M384.768,320.322a73.516,73.516,0,0,1-146.848,0H384.768m3.627-3.622H234.2a77.1,77.1,0,0,0,154.195,0Z" transform="translate(-234.2 -316.7)"></path></g><g transform="translate(71.784 126.831)"><path d="M252.865,241.765a21.372,21.372,0,0,1,20.321,14.625,20.675,20.675,0,0,0,1.581-7.94,21.483,21.483,0,0,0-42.966,0,22.032,22.032,0,0,0,1.116,6.779A21.452,21.452,0,0,1,252.865,241.765Z" transform="translate(-231.8 -227)"></path><path d="M492.065,241.765a21.372,21.372,0,0,1,20.321,14.625,20.675,20.675,0,0,0,1.581-7.94,21.483,21.483,0,0,0-42.966,0,22.032,22.032,0,0,0,1.116,6.779A21.548,21.548,0,0,1,492.065,241.765Z" transform="translate(-359.771 -227)"></path></g><g transform="translate(40.442 21.435)"style="fill: #f8e22a;"><path d="M407.2,54.89l96.3,92.117a93.171,93.171,0,0,0-6.836-36.773,94.941,94.941,0,0,0-19.623-27.579A97.917,97.917,0,0,0,407.2,54.89Z" transform="translate(-294.297 -29.4)"></path><path d="M272.183,54.89l-96.3,92.071a93.17,93.17,0,0,1,6.836-36.773A94.941,94.941,0,0,1,202.34,82.609,97.913,97.913,0,0,1,272.183,54.89Z" transform="translate(-170.534 -29.4)"></path><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(58.311 8.543)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(83.886 10.679)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(96.069 4.968)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(120.203 4.968)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(125.876 16.39)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(143.639 21.311)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(155.776 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(78.213 8.543)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(36.224 21.311)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(44.733 16.39)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(39.06 36.262)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(55.382 27.069)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(123.04 29.901)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(140.803 41.276)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(24.134 36.262)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(17.717 49.123)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(160.007 43.459)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(150.754 43.459)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(98.859 29.901)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(74.679 29.901)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(22.692 46.291)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(54.08 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(7.719 49.123)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(17.717 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(22.692 19.918)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(186.373 74.752)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(176.422 59.802)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(170.005 46.291)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(160.007 54.091)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(11.997 59.802)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(0 62.681)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(6.324 43.459)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(9.858 32.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(41.943 10.679)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(71.796)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(44.733)"></ellipse><ellipse cx="16.461" cy="16.483" rx="16.461" ry="16.483" transform="translate(1.349 70.434)"></ellipse></g><g transform="translate(4.265 25.567)"><path class="bubble-support-h" d="M126.7,143.5c-.046-1.207-.093-2.368-.093-3.575C125.394,73.391,179.334,18.511,246.945,17.4S370.5,69.166,371.659,135.7c.046,2.6,0,5.247-.093,7.8h8.6c.047-1.857.093-3.761.093-5.664C380.261,66.613,321.578,8.9,249.131,8.9S118,66.613,118,137.836c0,1.95.047,3.807.093,5.665h8.6Z" transform="translate(-103.399 -8.9)"></path><ellipse class="bubble-support-h" cx="18.6" cy="43.784" rx="18.6" ry="43.784" transform="translate(13.253 89.656)"></ellipse><ellipse class="bubble-support-h" cx="17.67" cy="43.784" rx="17.67" ry="43.784" transform="translate(240.639 89.656)"></ellipse><g transform="translate(0 80.742)"><path class="bubble-support-d" d="M106.435,288.539a4.829,4.829,0,0,1-4.836-4.829v-2.136h-.883c-6,0-12.416-18.247-12.416-45.362,0-27.162,6.417-45.362,12.416-45.362h.837v-1.021A4.829,4.829,0,0,1,106.389,185H107.5a4.829,4.829,0,0,1,4.836,4.829v31.015a149.914,149.914,0,0,1,.744,15.368,150.564,150.564,0,0,1-.744,15.368V283.8a4.829,4.829,0,0,1-4.836,4.829h-1.116v-.093Z" transform="translate(-87.509 -183.979)"></path><path d="M106.642,184.518a3.966,3.966,0,0,1,4,3.993v31.247a147.179,147.179,0,0,1,.744,15.229,147.18,147.18,0,0,1-.744,15.229v32.362a3.966,3.966,0,0,1-4,3.993h-1.116a3.966,3.966,0,0,1-4-3.993v-2.972H99.806c-2.046,0-5.115-3.25-7.766-12.3-2.465-8.775-3.813-20.2-3.813-32.408s1.348-23.633,3.813-32.222c2.6-9.1,5.673-12.3,7.766-12.3h1.721v-1.9a3.966,3.966,0,0,1,4-3.993h1.116m0-1.671h-1.116a5.691,5.691,0,0,0-5.673,5.664v.186C92.506,188.7,86.6,209.4,86.6,234.941s5.906,46.244,13.253,46.244v1.3a5.691,5.691,0,0,0,5.673,5.664h1.116a5.691,5.691,0,0,0,5.673-5.664V250.309a147.629,147.629,0,0,0,.744-15.415c0-5.386-.279-10.586-.744-15.415V188.464a5.632,5.632,0,0,0-5.673-5.664Z" transform="translate(-86.6 -182.8)"></path></g><g transform="translate(264.958 80.742)"><path class="bubble-support-d" d="M663.354,288.378a4.829,4.829,0,0,1-4.836-4.829V246.87c-.233-3.575-.419-7.29-.419-10.911s.093-7.336.419-10.911V189.529a4.829,4.829,0,0,1,4.836-4.829h1.116a4.829,4.829,0,0,1,4.836,4.829v1.114l1.069-.093h.186c6,0,12.416,18.247,12.416,45.362,0,27.162-6.417,45.362-12.416,45.362h-.186l-1.069-.093v2.275a4.829,4.829,0,0,1-4.836,4.829h-1.116Z" transform="translate(-657.309 -183.818)"></path><path d="M663.608,184.518a3.966,3.966,0,0,1,4,3.993V190.6l1.86-.186h.232c2.046,0,5.115,3.25,7.766,12.3,2.464,8.59,3.813,20.011,3.813,32.222s-1.349,23.633-3.813,32.222c-2.6,9.1-5.673,12.3-7.766,12.35h-.279l-1.814-.232v3.2a3.966,3.966,0,0,1-4,3.993h-1.116a3.966,3.966,0,0,1-4-3.993V245.759c-.232-3.575-.419-7.243-.419-10.865s.093-7.29.419-10.865V188.464a3.966,3.966,0,0,1,4-3.993l1.116.046m0-1.718h-1.116a5.691,5.691,0,0,0-5.673,5.664v35.473c-.232,3.529-.418,7.15-.418,10.958s.093,7.429.418,10.957v36.633a5.691,5.691,0,0,0,5.673,5.664h1.116a5.691,5.691,0,0,0,5.673-5.664v-1.347c.093,0,.233.046.419.046,7.347,0,13.253-20.708,13.253-46.244S677.046,188.7,669.7,188.7a1.6,1.6,0,0,0-.419.046v-.232a5.7,5.7,0,0,0-5.673-5.711Z" transform="translate(-656.4 -182.8)"></path></g><g transform="translate(158.473 148.251)"><path class="bubble-support-d" d="M459.6,388.116a103.455,103.455,0,0,1-29.2-4.132l2.883-4.5a99.881,99.881,0,0,0,26.18,3.482h0a98.215,98.215,0,0,0,79.376-40.023l.326-.511-.326-.511a7.612,7.612,0,0,1-1.441-4.457,7.673,7.673,0,1,1,7.672,7.661,6.889,6.889,0,0,1-.93-.046l-.512-.046-.279.418A102.772,102.772,0,0,1,459.6,388.116Z" transform="translate(-429.005 -329.057)"></path><path d="M543.511,329.918a6.825,6.825,0,1,1,0,13.65,4.794,4.794,0,0,1-.791-.046l-1.023-.093-.558.789a101.3,101.3,0,0,1-36.921,31.387,103.891,103.891,0,0,1-74.121,7.057l1.953-3.018a100.752,100.752,0,0,0,25.854,3.343,99.182,99.182,0,0,0,80.073-40.348l.744-.975-.7-1.021a6.836,6.836,0,0,1-1.255-3.9,6.7,6.7,0,0,1,6.743-6.825m0-1.718a8.527,8.527,0,0,0-8.556,8.543,8.05,8.05,0,0,0,1.581,4.875,96.947,96.947,0,0,1-78.678,39.7,100.323,100.323,0,0,1-26.6-3.622l-3.86,5.989a106.147,106.147,0,0,0,30.6,4.5,103.922,103.922,0,0,0,84.584-42.948,7.207,7.207,0,0,0,.976.046,8.543,8.543,0,1,0-.046-17.086Z" transform="translate(-427.4 -328.2)"></path></g><ellipse cx="11.201" cy="14.79" rx="11.201" ry="14.79" transform="translate(134.454 199.807) rotate(-65.267)"></ellipse></g></g></g></svg>
                 </div>
               </div>
             </div>
@@ -264,107 +265,304 @@
       </section>
       <div id="modal1" class="modal">
           <a href="#/" style="margin-top: -440px;color: white;text-decoration: none;border: 2px solid white;padding: 10px 16px 10px 18px;text-align: center;font-size: 22px;border-radius: 70px;">Fechar</a>
-        <p style="font-size: 30px;">
-          Nesta fase, eu me familiarizo com seus<br>planos, metas e desejos, para desenvolver<br>um conceito orientado por objetivos<br>de acordo com suas necessidades e idéias.</p>
-      </div>
-      <div id="modal5" class="modal">
-        <a href="#/">x</a>
+          <label name="Nome">
+              <div class="logo" style="margin-top: -5%;">
+              <h2 style="left: 48%;margin-top: -4%;"><b></b> <b><span>PLANEJAMENTO</span><span></span></b></h2>
+              </div>
+          </label>
+        <p style="font-size: 30px;margin-top: 12%;">
+          Nesta fase, nos familiarizamos com seus<br>planos, metas e desejos, para desenvolver<br>um conceito orientado por objetivos,<br>de acordo com suas necessidades e idéias.</p>
       </div>
       <div id="modal2" class="modal">
-        <a href="#/">x</a>
+          <a href="#/" style="margin-top: -440px;color: white;text-decoration: none;border: 2px solid white;padding: 10px 16px 10px 18px;text-align: center;font-size: 22px;border-radius: 70px;">Fechar</a>
+          <label name="Nome">
+              <div class="logo" style="margin-top: -5%;">
+              <h2 style="left: 44%;;margin-top: -4%;"><b>VISUAL</b> <b><span>DESIGN</span><span></span></b></h2>
+              </div>
+          </label>
+        <p style="font-size: 30px;margin-top: 14%;">
+            Assim que as condições do projeto<br>forem definidas, criamos um protótipo<br>de precisão de pixel usando o Photoshop.<br>Em seguida, discutimos o layout pensando<br>na experiencia do usuario, que conclui essa fase.</p>
       </div>
       <div id="modal3" class="modal">
-        <a href="#/">x</a>
+          <a href="#/" style="margin-top: -440px;color: white;text-decoration: none;border: 2px solid white;padding: 10px 16px 10px 18px;text-align: center;font-size: 22px;border-radius: 70px;">Fechar</a>
+          <label name="Nome">
+              <div class="logo" style="margin-top: -5%;">
+              <h2 style="left: 51%;margin-top: -7%;"><b></b> <b>DESENVOLVIMENT<span>O</span><span></span></b></h2>
+              </div>
+          </label>
+        <p style="font-size: 30px;margin-top: 12%;">
+          Implementamos sites usando a abordagem<br>"mobile-first" responsiva ou adaptativa.<br>Levamos em consideração a compatibilidade<br>entre navegadores, celulares e tamanhos<br>destintos de tela. Privando a melhor<br>experiencia do usuario.</p>
       </div>
       <div id="modal4" class="modal">
-        <a href="#/">x</a>
+          <a href="#/" style="margin-top: -440px;color: white;text-decoration: none;border: 2px solid white;padding: 10px 16px 10px 18px;text-align: center;font-size: 22px;border-radius: 70px;">Fechar</a>
+          <label name="Nome">
+              <div class="logo" style="margin-top: -5%;">
+              <h2 style="left: 45%;;margin-top: -7%;"><b></b> <b><span>L</span>ANÇAMEN<span>TO</span></b></h2>
+              </div>
+          </label>
+        <p style="font-size: 30px;margin-top: 8%;">
+          Depois que tudo tiver sido testado e<br>verificado, seu site estará pronto para<br>exibição pública. Vamos enssinar como<br> operar o site  e responder eventuais duvidas.</p>
       </div>
+      <div id="modal5" class="modal">
+          <a href="#/" style="margin-top: -440px;color: white;text-decoration: none;border: 2px solid white;padding: 10px 16px 10px 18px;text-align: center;font-size: 22px;border-radius: 70px;">Fechar</a>
+          <label name="Nome">
+              <div class="logo" style="margin-top: -5%;">
+              <h2 style="left: 46%;margin-top: -3%;"><b></b> <b><span>SUPORTE</span><span></span></b></h2>
+              </div>
+          </label>
+        <p style="font-size: 30px;margin-top: 12%;">
+        Ficou alguma duvida ?<br>Nós temos planos de suporte<br>de acordo com sua necessidade !  
+        </p>
+      </div>
+      
 
     </div>
-    <div class="panel" data-x-pos="-1"  data-y-pos="1" onMouseOver="document.getElementById('some').style.opacity = 0" onMouseOut="document.getElementById('some').style.display = none">
+    <!-- <div class="panel" data-x-pos="-1"  data-y-pos="1" onMouseOver="document.getElementById('some').style.opacity = 0" onMouseOut="document.getElementById('some').style.display = none">
       <span class="panel__nav panel__nav--right-down js-down js-right">home</span>
       <span class="panel__nav panel__nav--right js-right">sobre</span>
-<!--       <span class="panel__nav panel__nav--down js-down">home</span> -->
-      <h2>SITES</h2>
-      <div class="txt-sobre" style="font-size: 20px;margin-top: 10%;">
-        <div class="logo" style="margin-left: 10%;">
-          <p>seu <b>p<span>ro</span>pr<span>i</span>o</b> site é uma agencia <b>d<span>i</span>gi<span>ta</span>l</b></p>
+      <span class="panel__nav panel__nav--down js-down">home</span>
+      <h2 style="z-index: 100;">CASES</h2>
+      <section>
+        <div class="hero-center-section">
+          <div class="left-text">VMA</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/nature.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="logo2" style="margin-left: 10%;">
-            <p>focada em <b>de<span>se</span>nvo<span>lv</span>imento</b> de sites <b>dri<span>bb</span>b<span>le</span></b></p>
+        <div class="hero-center-section">
+          <div class="left-text">travel</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/tdbg.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="logo2" style="margin-left: 10%;">
-            <p>focada em <b>de<span>se</span>nvo<span>lv</span>imento</b> de sites <b>dri<span>bb</span>b<span>le</span></b></p>
+        <div class="hero-center-section">
+          <div class="left-text">fashion</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/sgbg.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="logo3" style="margin-left: 10%;">
-          <p>alo <b>dri<span>bb</span>b<span>le</span></b> como vai ? <b>dri<span>bb</span>b<span>le</span></b></p>
+        <div class="hero-center-section">
+          <div class="left-text">animals</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/ellbgbk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-  
-      <!-- <canvas id="canvas" width="900" height="500" style="margin-bottom: -6%;position: absolute; z-index: 1000;    margin-left: 29%;"></canvas> -->
-
-    </div>
-    <div class="panel" data-x-pos="1"  data-y-pos="1" onMouseOver="document.getElementById('some').style.opacity = 0" onMouseOut="document.getElementById('some').style.display = none">
+        <div class="hero-center-section">
+          <div class="left-text">business</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/bdcbgbk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          
+        <div class="section padding-top-bottom over-hide z-bigger">
+          <ul class="slide-buttons">
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="VMA">VMA</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" class="hover-target" data-hover="TODAY">TODAY</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="SERGAL">SERGAL</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="JOURNAL">JOURNAL</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="BOSQUEDOCÃO">BOSQUEDOCÃO</a>
+            </li>
+          </ul>
+        </div>
+        
+        <div class='cursor' id="cursor"></div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div> 
+        </section>
+    </div> -->
+    <!-- <div class="panel" data-x-pos="1"  data-y-pos="1" onMouseOver="document.getElementById('some').style.opacity = 0" onMouseOut="document.getElementById('some').style.display = none">
       <span class="panel__nav panel__nav--left-down js-down js-left">home</span>
       <span class="panel__nav panel__nav--left js-left">sobre</span>
-<!--       <span class="panel__nav panel__nav--down js-down">down</span> -->
+      <span class="panel__nav panel__nav--down js-down">down</span>
         <section class="container">
             <div class="section first" id="today" onclick="window.open('http://agtoday.com.br')">
-              <!-- <div class="cont_title">
-                <h2 class="h2-cases">Today<br>Entretenimento</h2>
-                <h3>ENTRETENIMENTO</h3>
-              </div> -->
+   
               <div class="cont_desc">
                 <p>Site institucional para agência de eventos , criado do zero junto com o cliente.</p>
               </div>
             </div>
           <div class="section" onclick="window.open('http://vmacp.com.br')">
-            <!-- <div class="cont_title">
-              <h2 class="h2-cases">VMA<br>Connecting People</h2>
-            </div> -->
+
             <div class="cont_desc">
               <p>Site institucional de assessoria de imagem, desenhado por uma agência de marketing e programado por nós.</p>
             </div>
           </div>
           <div class="section" onclick="window.open('http://ellus.com/ellusjournal/')">
-            <!-- <div class="cont_title">
-              <h2 class="h2-cases">Carlsbad<br>Caverns</h2>
 
-            </div> -->
             <div class="cont_desc">
               <p>Blog corporativo , desenvolvido do zero junto com a marca.</p>
             </div>
           </div>
           <div class="section" onclick="window.open('http://bosquedocao.com.br')" >
-            <!-- <div class="cont_title">
-              <h2 class="h2-cases">Bryce<br>Canyon</h2>
 
-            </div> -->
             <div class="cont_desc">
               <p>Site institucional de hotel para cachorros, desenvolvido do zero junto com o cliente.</p>
             </div>
           </div>
           <div class="section" onclick="window.open('http://sergal.com.br')">
-            <!-- <div class="cont_title">
-              <h2 class="h2-cases">Dry<br>Tortugas</h2>
 
-            </div> -->
             <div class="cont_desc">
               <p>Site institucional e Blog corporativo , desenvolvido junto ao cliente.</p>
             </div>
           </div>
         </section>
         <h2 style="top: 0%; text-shadow: 1px 1px 4px black;">cases</h2>
-    </div>
-   <!--  <div class="panel" data-x-pos="-1"  data-y-pos="0">
-      <span class="panel__nav panel__nav--up js-up">up</span>
-      <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-      <span class="panel__nav panel__nav--right js-right">home</span>
-      <span class="panel__nav panel__nav--right-down js-down js-right">down/right</span>
-      <span class="panel__nav panel__nav--down js-down">down</span>
-      <h2>left</h2>
     </div> -->
- <!--    <div class="panel" data-x-pos="-1"  data-y-pos="-1">
+    <div class="panel" data-x-pos="-1"  data-y-pos="0">
+      <!-- <span class="panel__nav panel__nav--up js-up">up</span> -->
+      <span class="panel__nav panel__nav--right-top js-up js-right">sobre</span>
+      <span class="panel__nav panel__nav--right js-right">home</span>
+      <span class="panel__nav panel__nav--right-down js-down js-right">contato</span>
+      <!-- <span class="panel__nav panel__nav--down js-down">down</span> -->
+      <h2>cases</h2>
+      <section>
+        <div class="hero-center-section">
+          <div class="left-text">VMA</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div style="position: absolute;z-index: 100;text-align:left;margin-left: 50%;font-size: 25px;margin-top: 10%;">
+                      <p>SITE INSTITUCIONAL<br>DIGITAL INFLUENCER<br>VMA CONNECTING PEOPLE</p>
+                    </div>
+                <div class="img-wrap">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/nature.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">TODAY</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div style="position: absolute;z-index: 100;text-align:left;margin-left: 50%;font-size: 25px;margin-top: 10%;">
+                  <p>SITE INSTITUCIONAL<br>AGÊNCIA DE EVENTOS<br>Today Entretenimento</p>
+                </div>
+                <div class="img-wrap">
+                  <img src="img/tdbg.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">SERGAL</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div style="position: absolute;z-index: 100;text-align:left;margin-left: 50%;font-size: 25px;margin-top: 10%;">
+                      <p>SITE INSTITUCIONAL<br>BLOG CORPORATIVO<br>SERGAL GALVANIZAÇÃO</p>
+                    </div>
+                <div class="img-wrap">
+                  <img src="img/sgbg.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">JOURNAL</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div style="position: absolute;z-index: 100;text-align:left;margin-left: 50%;font-size: 25px;margin-top: 10%;">
+                      <p>BLOG CORPORATIVO<br>ELLUS JOURNAL</p>
+                    </div>
+                <div class="img-wrap">
+                  <img src="img/ellbgbk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">BOSQUEDOCAO</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                  <div style="position: absolute;z-index: 100;text-align:left;margin-left: 50%;font-size: 25px;margin-top: 10%;">
+                      <p>SITE INSTITUCIONAL<br>HOTEL PARA CACHORROS<br>BOSQUE DO CÃO</p>
+                    </div>
+                <div class="img-wrap">
+                  <img src="img/bdcbgbk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          
+        <div class="section padding-top-bottom over-hide z-bigger">
+          <ul class="slide-buttons">
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="VMA">VMA</a>
+            </li>
+            <li class="">
+              <a target="_blank" href="http://agtoday.com.br/index.html" class="hover-target" class="hover-target" data-hover="TODAY">TODAY</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="SERGAL">SERGAL</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="JOURNAL">JOURNAL</a>
+            </li>
+            <li class="">
+              <a href="#0" class="hover-target" data-hover="BOSQUEDOCÃO">BOSQUEDOCÃO</a>
+            </li>
+          </ul>
+        </div>
+          
+        <!-- Page cursor
+        ================================================== -->
+        
+        <div class='cursor' id="cursor"></div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div> 
+        </section>
+
+    </div>
+    <!-- <div class="panel" data-x-pos="-1"  data-y-pos="-1">
       <span class="panel__nav panel__nav--up js-up">up</span>
       <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
@@ -376,23 +574,112 @@
       <span class="panel__nav panel__nav--left js-left">left</span>
       <h2>Down Right</h2>
     </div> -->
-<!--     <div class="panel" data-x-pos="1"  data-y-pos="0">
-      <span class="panel__nav panel__nav--up js-up">up</span>
-      <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-      <span class="panel__nav panel__nav--left js-left">left</span>
-      <span class="panel__nav panel__nav--left-down js-down js-left">down/left</span>
-      <span class="panel__nav panel__nav--down js-down">down</span>
-      <h2>right</h2>
-    </div> -->
+    <div class="panel" data-x-pos="1"  data-y-pos="0">
+      <!-- <span class="panel__nav panel__nav--up js-up">up</span> -->
+      <span class="panel__nav panel__nav--left-top js-up js-left">sobre</span>
+      <span class="panel__nav panel__nav--left js-left">home</span>
+      <span class="panel__nav panel__nav--left-down js-down js-left">contato</span>
+      <!-- <span class="panel__nav panel__nav--down js-down">down</span> -->
+      <h2>cases</h2>
+        <section>
+        <div class="hero-center-section">
+          <div class="left-text">VMA</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/nature.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">travel</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/tdbg.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">fashion</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/sgbg.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">animals</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/ellbgbk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="hero-center-section">
+          <div class="left-text">business</div>
+          <div class="container" style="overflow: hidden;">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="img-wrap">
+                  <img src="img/bdcbgbk.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          
+          
+        <div class="section padding-top-bottom over-hide z-bigger">
+          <ul class="slide-buttons" style="left: 23% !important;">
+            <li class="" style="text-align: right !important;">
+              <a href="#0" class="hover-target" data-hover="VMA">VMA</a>
+            </li>
+            <li class="" style="text-align: right !important;">
+              <a href="#0" class="hover-target" class="hover-target" data-hover="TODAY">TODAY</a>
+            </li>
+            <li class="" style="text-align: right !important;">
+              <a href="#0" class="hover-target" data-hover="SERGAL">SERGAL</a>
+            </li>
+            <li class="" style="text-align: right !important;">
+              <a href="#0" class="hover-target" data-hover="JOURNAL">JOURNAL</a>
+            </li>
+            <li class="" style="text-align: right !important;margin-left: -12%;">
+              <a href="#0" class="hover-target" data-hover="BOSQUEDOCÃO">BOSQUEDOCÃO</a>
+            </li>
+          </ul>
+        </div>
+          
+        <!-- Page cursor
+        ================================================== -->
+        
+        <div class='cursor' id="cursor"></div>
+        <div class='cursor2' id="cursor2"></div>
+        <div class='cursor3' id="cursor3"></div> 
+        </section>
+    </div>
     <div class="panel" data-x-pos="0"  data-y-pos="-1" onMouseOver="document.getElementById('some').style.opacity = 0" onMouseOut="document.getElementById('some').style.display = none">
       <span class="panel__nav panel__nav--up js-up" style="z-index: 1000;">home</span>
-<!--       <span class="panel__nav panel__nav--left-top js-up js-left">up/left</span>
-      <span class="panel__nav panel__nav--right-top js-up js-right">up/right</span>
-      <span class="panel__nav panel__nav--left js-left">left</span>
+      <span class="panel__nav panel__nav--left-top js-up js-left">cases</span>
+      <span class="panel__nav panel__nav--right-top js-up js-right">cases</span>
+      <!--<span class="panel__nav panel__nav--left js-left">left</span>
       <span class="panel__nav panel__nav--right js-right">right</span>
       <span class="panel__nav panel__nav--down js-down">down</span> -->
-      <h2 style="top: 10% !important;">ENTRE EM<BR>CONTATO</h2>
-    <!-- <canvas id="canvas" width="900" height="500" style="margin-bottom: -6%;position: absolute; margin-left: 29%;z-index: 500;"></canvas> -->
+      <h2 style="top: 10% !important;font-size: 60px;">ENTRE EM<BR>CONTATO</h2>
       <video width="100%"  autoplay muted loop>
         <source src="spp.mp4" type="video/mp4">
       </video>
@@ -463,6 +750,10 @@
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js'></script>
 <script  src="js/sobre.js"></script>
+<script src="js/type.js"></script>
+<script src="js/tittle.js"></script>
+<script  src="js/cases.js"></script>
+
 
 
 

@@ -10,7 +10,7 @@ $(document).ready(function() {
     loop: true,
     nav: true,
     items: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: sliderCharacterSpeed,
     autoplayTimeout: sliderTimeout,
     navSpeed: sliderCharacterSpeed,
@@ -26,7 +26,7 @@ $(document).ready(function() {
     loop: true,
     nav: false,
     items: 1,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: sliderTextSpeed,
     navSpeed: sliderTextSpeed,
     autoplayTimeout: sliderTimeout,
@@ -51,21 +51,5 @@ $(document).ready(function() {
   });
 
   // OWL autoplay
-  $(".character-carousel").on("mouseover", function() {
-    $(".character-carousel").trigger("stop.owl.autoplay");
-    $(".text-carousel").trigger("stop.owl.autoplay");
-  });
 
-  $(".character-carousel").on("mouseout", function() {
-    $(".character-carousel").trigger(
-      "play.owl.autoplay",
-      sliderTimeout,
-      sliderCharacterSpeed
-    );
-    $(".text-carousel").trigger(
-      "play.owl.autoplay",
-      sliderTimeout,
-      sliderTextSpeed
-    );
-  });
 });
