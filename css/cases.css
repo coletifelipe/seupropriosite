@@ -1,4 +1,5 @@
 
+
 .col-md-8 {
     width: 60%;
     margin: 0 auto;
@@ -19,10 +20,10 @@
  ================================================== */
 
  
- ::selection {
+ /* ::selection {
 	 color: var(--white);
 	 background-color: var(--black);
- }
+ } */
  ::-moz-selection {
 	 color: var(--white);
 	 background-color: var(--black);

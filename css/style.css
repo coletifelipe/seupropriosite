@@ -1,3 +1,21 @@
+@font-face {
+  font-family: 'bebasbold';
+  src: url('../bebasneue/bebasneue-bold.otf'); 
+  src: url('../bebasneue/bebasneue-bold.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'bebaslight';
+  src: url('../bebasneue/bebasneue-light.otf'); 
+  src: url('../bebasneue/bebasneue-light.ttf')  format('truetype');
+}
+
+@font-face {
+  font-family: 'bebasbok';
+  src: url('../bebasneue/bebasneue-book.otf'); 
+  src: url('../bebasneue/bebasneue-book.ttf')  format('truetype');
+}
+
 @keyframes elemento {
   0% {
     opacity: 0;
@@ -22,6 +40,24 @@
     font-size: 70px;
   }
 }
+button.owl-prev {
+  opacity: 0;
+}
+
+
+.txt-sobre{
+ color: #a2a0a0;
+ font-family: 'bebaslight';
+ font-size: 50px;
+}
+.txt-sobre:hover {
+  color: white;
+  text-shadow: 0px 0px 3px #ffffff;
+  font-family: 'bebaslight';
+  font-size: 50px;
+}
+
+
 .scale {
   animation-name: elemento;
   animation-duration: 13s;
@@ -45,7 +81,8 @@ body {
   background-image: url('https://i.imgsafe.org/6c147abfa3.jpg');
   background-repeat: repeat;
   color: white;
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
+  font-family: 'bebasbold';
   letter-spacing: .2rem;
   margin: 0;
   overflow: hidden;
@@ -126,7 +163,7 @@ h1 {
   cursor: default;
   left: 50%;
   cursor: pointer;
-  font-size: 77px;
+  font-size: 110px;
   line-height: 1;
   position: absolute;
   text-align: center;
@@ -163,7 +200,7 @@ h1 {
   left: 50%;
   opacity: .2;
   position: absolute;
-  top: 50%;
+  top: 48%;
   transform: translateX(-50%) translateY(-50%) translateY(-12vmin);
   transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
   user-select: none;
@@ -183,6 +220,7 @@ h1 {
     transition: opacity 0.3s cubic-bezier(0.55, 0, 0.1, 1);
     user-select: none;
     will-change: opacity;
+    font-size: 20px;
 }
 .panel__nav--up {
   left: 50%;

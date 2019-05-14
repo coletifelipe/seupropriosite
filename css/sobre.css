@@ -17,8 +17,9 @@
   /* padding: 6px 15px !important; */
   transform: rotateZ(-180deg);
   outline: none;
-  font-size: 160px;
-  /* margin-top: 22%; */
+  font-family: 'Oswald', sans-serif;
+  font-size: 120px;
+  margin-top: 3%;
 }
 .owl-carousel .owl-nav button.owl-prev *,
 .owl-carousel .owl-nav button.owl-next * {
@@ -28,7 +29,7 @@
 .slider {
   overflow: hidden;
   position: relative;
-  height: 85vh;
+  height: 100vh;
 }
 .slider .text-slider-content {
   position: absolute;
